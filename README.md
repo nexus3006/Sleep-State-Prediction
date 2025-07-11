@@ -1,6 +1,8 @@
 # Sleep-State-Prediction
-• Designed a staged classifier in PyTorch using 146K+ samples with stratified splits and Adam optimiser
 
-• Boosted val. accuracy from 36% → 81% via custom loss tuning, and CNN-LSTM hybrid architecture
+• Built BiLSTM classifier using 146K+ time-series samples with engineered circadian and motion features
 
-• Achieved 0.90 AUC, 0.84 F1(Awake) by integrating LR scheduling, and confusion matrix analysis
+• Applied soft labelling, non-wear filtering, and Gaussian smoothing to handle noisy event annotations
+
+• Achieved F1 score 0.66 (no-event) via class-weighted loss, cosine LR scheduling, and dropout regularization
+
